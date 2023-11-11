@@ -1,0 +1,51 @@
+/**we use * to initalize some values that has css values we don't want to be applied to our project(for e.g margin)**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+/*we apply position fixed to the navbar in order to make the nav appear whathever we are in the page even in the bottom of the page,the navbar will still stick to the top*/
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100vw;
+  height: 70px;
+  background-color: cadetblue;
+}
+nav img {
+  width: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+nav ul li {
+  color: white;
+  cursor: pointer;
+}
+
+nav input {
+  padding: 8px;
+  border: 5px solid orange;
+  border-radius: 15px;
+  width: 150px;
+  background-color: white;
+  cursor: pointer;
+}
+/*hover is used to apply specific css when our mouse hover the button*/
+nav input:hover {
+  border: 5px solid white;
+  background-color: orange;
+}
+/*in order ro make our main appear completely*/
+main {
+  padding-top: 70px;
+}
